@@ -5,10 +5,9 @@ use rand::{
 };
 use std::vec::IntoIter;
 
-/// Generate passwords that are easy to remember. Inspired by the xkcd webcomic:
-/// <https://xkcd.com/936/>
+/// Clap argument parser.
 #[derive(Parser, Debug)]
-#[clap(author, version, about, long_about = None)]
+#[clap(version, about, long_about = None)]
 pub struct Args {
     /// Number of words to include in the password
     #[clap(short, long, value_parser, default_value_t = 6)]
