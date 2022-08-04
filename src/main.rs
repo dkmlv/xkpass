@@ -1,8 +1,8 @@
 use clap::Parser;
-use xkcdpass::Args;
+use xkpass::Args;
 
 fn main() {
     let args = Args::parse();
-    let xkcd_password = xkcdpass::generate_password(args);
+    let xkcd_password = xkpass::generate_password(args);
     println!("{}", xkcd_password);
 }
